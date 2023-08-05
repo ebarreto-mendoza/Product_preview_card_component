@@ -20,14 +20,16 @@
 
 </head>
 <body>
-  <article>
-    <img id="img-desktop" src="images/image-product-desktop.jpg" alt="Perfume bottle surrounded by 2 green leaf branches">
-    <img id="img-mobile" src="images/image-product-mobile.jpg" alt="Perfume bottle surrounded by 2 green leaf branches">
-
+  <main>
+    <picture>
+      <source class="img-mobile" media="(max-width: 550px)" srcset="images/image-product-mobile.jpg" alt="Perfume bottle surrounded by 2 green leaf branches">
+      <source class="img-desktop" media="(min-width: 551px)" srcset="images/image-product-desktop.jpg" alt="Perfume bottle surrounded by 2 green leaf branches" >
+      <img class="img-desktop" src="images/image-product-desktop.jpg" alt="Perfume bottle surrounded by 2 green leaf branches">
+    </picture>
 
     <section>
-      <p class="product-type">P E R F U M E</p>
-      <h1>Gabrielle Essence Eau De Parfum</h1>
+      <h1>P E R F U M E</h1>
+      <h2>Gabrielle Essence Eau De Parfum</h2>
       <p class="product-description">A floral, solar and voluptuous interpretation composed by Olivier Polge, 
         Perfumer-Creator for the House of CHANEL.</p>
 
@@ -42,6 +44,6 @@
       </button>
 
     </section>
-  </article>
+  </main>
 </body>
 </html>
